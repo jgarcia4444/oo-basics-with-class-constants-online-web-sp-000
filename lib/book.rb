@@ -6,7 +6,7 @@ class Book
 
   def initialize(title)
     @title = title
-    GENRES << self
+    GENRES << self.genre
   end
 
   def turn_page
