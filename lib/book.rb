@@ -6,11 +6,15 @@ class Book
 
   def initialize(title)
     @title = title
-    GENRES << self.genre
   end
 
   def turn_page
     puts "Flipping the page...wow, you read fast!"
+  end
+
+  def genre=(book_genre)
+    @genre = book_genre
+    GENRES << book_genre
   end
 
 end
